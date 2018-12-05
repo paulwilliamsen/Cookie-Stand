@@ -24,11 +24,21 @@ img, section {
 
 }
 
+td:hover {
+  background-color: rgb(255, 191, 0);
+}
+th:hover {
+  background-color: rgb(255, 191, 0);
+
+}
+
+
+
 table {
   border: 20px solid rgb(198, 118, 56);
   margin-left: auto;
   margin-right: auto;
-	empty-cells: hide;
+  empty-cells: hide;
 }
 
 td {
