@@ -17,29 +17,36 @@ h2 {
 span {
   clear: none;
 }
-img {
+img, section {
   display: block;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 table {
-  border: 17px solid rgb(154, 87, 36);
+  border: 20px solid rgb(198, 118, 56);
+  margin-left: auto;
+  margin-right: auto;
 	empty-cells: hide;
 }
 
 td {
 	padding: 10px;
-	border-radius: 10px;
+	/* border-radius: 10px; */
   border: 1px solid black;
   background: white;
   text-align: center;
 }
 
 th {
-  background-color:rgb(205, 68, 58);
-  border-left: 1px solid black;
+  background-color:rgb(189, 56, 46);
+  border: 1px solid black;
+  padding: 5px;
+  /* border-radius: 10px; */
+
   color: white;
   font-size: 18px; 
   padding-top: 15px;
+  padding-bottom: 15px;
 }
