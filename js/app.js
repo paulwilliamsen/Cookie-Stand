@@ -76,9 +76,12 @@ var capitalHill = new Store('Capital Hill', 20, 38, 2.3);
 var alki = new Store('Alki', 2, 16, 4.6);
 
 // Still working on the footer//
+ wednesdaycode
 
 
 
+
+master
 function footerRow() {
   var tableRow = document.createElement('tr');
   var thEl = document.createElement('td');
@@ -86,6 +89,7 @@ function footerRow() {
   tableRow.appendChild(thEl);
   cookieTable.appendChild(tableRow);
 
+ wednesdaycode
   var totalTotal = 0;
 
   for (var x = 0; x < hours.length; x++) {
@@ -105,14 +109,37 @@ function footerRow() {
   tdElement.textContent = totalTotal;
   tableRow.appendChild(tdElement);
 
+
+  var allTotals = 0;
+  for (var i = 0; i < hours.length; i++) {
+    var hourlyTotal = 0;
+    console.log(cookieTable.rows[i]);
+    for (var x = 0; x < hours.length; x++) {
+      hourlyTotal = hourlyTotal + cookieTable[i].totalCookies[x];
+      allTotals += cookieTable[x].totalCookies[i];
+      console.log(hourlyTotal);
+    }
+    var tdElement = document.createElement('td');
+    tdElement.textContent = hourlyTotal;
+    tableRow.appendChild(tdElement);
+  }
+  tdElement = document.createElement('td');
+  tdElement.textContent = allTotals;
+  tableRow.appendChild(tdElement);
+
 }
 
 makeHeaderRow();
+alki.render();
+capitalHill.render();
 firstandPike.render();
 seattleAirport.render();
-seattleCenter.render();
+seattleCenter.render(); wednesdaycode
 capitalHill.render();
 alki.render();
+footerRow();
+
+
 footerRow();
 
 
