@@ -5,18 +5,26 @@ body {
 legend {
 color: white;
 display: flex;
-}
-legend {
-color: white;
 font-size: 20pt;
+padding-top: 10px;
 }
 
 button {
   margin-top: 20px;
+  border-radius: 6px;
+  font-size: 10pt; 
+  font-weight: bolder;
+  padding: 8px;
 }
 fieldset {
   color: white;
-  text-align: center;
+  text-align: right;
+  padding-right: 400px;
+  padding-top: 10px;
+}
+input {
+  margin-top: 5px;
+  margin-left: 5px;
 }
 
 h2 {
@@ -36,32 +44,33 @@ h2 {
 
 }
 
-div {
-  float: right;
-}
+
+
 
 
 td:hover {
   background-color: rgb(255, 191, 0);
+  -webkit-transform: scale(1.4);
+  -ms-transform: scale(1.4);
+  transform: scale(1.4);
 }
 th:hover {
   background-color: rgb(255, 191, 0);
 
 }
 
-
-
+ 
 table {
   border: 20px solid rgb(198, 118, 56);
+  overflow-y: scroll;
   margin-left: auto;
   margin-right: auto;
   empty-cells: hide;
 
-}
+} 
 
 td {
-	padding: 10px;
-	/* border-radius: 10px; */
+	padding: 5px;
   border: 1px solid black;
   background: white;
   text-align: center;
@@ -71,10 +80,23 @@ th {
   background-color:rgb(189, 56, 46);
   border: 1px solid black;
   padding: 5px;
-  /* border-radius: 10px; */
-
   color: white;
   font-size: 18px; 
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+td:last-child {
+font-weight: bold;
+
+}
+
+tr:last-child {
+font-weight: bold;
+}
+
+tr :last-child > td :last-child {
+font-weight: bolder;
+
+
 }
