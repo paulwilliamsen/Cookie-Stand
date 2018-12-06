@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Salmon Store Sales</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -9,8 +10,34 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   </head>
   <body>
-    <span> <img src="title.png" height="170" width="300" alt="Salmon Cookies"> </span>
+    <a href="index.html">
+    <span> <img id="logo" src="title.png" height="170" width="300" alt="Salmon Cookies"> </span>
+    </a>  
     <section> <table id="table"></table> </section>
+
+    <form id="store-form">
+      <fieldset>
+        <legend>Add a New Cookie Store</legend>
+
+        <label for="name">Store Name</label>
+        <input id="name" type="text" name="StoreName" required/>
+        <br>
+
+        <label for="mincustomer">Minimum Customer's</label>
+        <input id="mincustomer" type="number" name="mincustomer" required/>
+        <br>
+
+        <label for="maxcustomer">Max Customer's</label>
+        <input id="maxcustomer" type="number" name="maxcustomer" required/>
+        <br>
+
+        <label for="avgcookie">Average Cookie's Sold</label>
+        <input id="avgcookie" type="number" name="avgcookie" step="0.1" required/>
+        <br>
+
+        <button>Add This Store</button>
+      </fieldset>
+    </form>
 
     <script src="./js/app.js"></script>
   </body>
