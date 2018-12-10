@@ -3,6 +3,8 @@ body {
   background: black;
   resize: both;
   overflow: auto;
+  padding-left: 35px;
+  text-align: center;
 }
 legend {
 color: white;
@@ -20,9 +22,10 @@ padding-top: 10px;
   color: white;
   text-decoration: none;
   margin: 5px;
+  font-size: 20pt;
 
 }
-#merchTitle {
+#merchTitle, #uspicture {
   padding-top: 15px;
   font-family: 'Waiting for the Sunrise', cursive;
   color: white;
@@ -30,6 +33,7 @@ padding-top: 10px;
   font-size: 35pt;
   padding-bottom: 35px;
 }
+
 
 
 
@@ -62,11 +66,10 @@ h2 {
 #sales {
   position: absolute;
 
-  border: 2px solid white;
 }
 #logo {
-  margin-left: 500px;
-  margin-right: 500px;
+display: block;
+margin: 0 auto;
 
 
 }
@@ -114,3 +117,49 @@ td:last-child, tr:last-child  {
 font-weight: bold;
 
 }
+p {
+  color: white;
+  padding-top: 20px; 
+
+}
+ul {
+  color: white;
+  font-family: 'Unlock', cursive;
+  border-bottom: 2px solid white;
+  padding-bottom: 75px;
+  font-size: 15pt;
+
+}
+#hours {
+  font-size: 15pt;
+  padding-top: 10px;
+  color: green;
+
+}
+#location {
+  padding-bottom: 10px;
+  font-size: 25pt;
+}
+
+#review {
+  font-family: 'Advent Pro', sans-serif;
+  margin-top: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  display: block;
+
+  color: rgb(255, 255, 255);
+
+}
+#title {
+  font-family: 'Gloria Hallelujah', cursive;
+  padding-left: 10px;
+  font-size: 30px;
+
+}
+
+.red {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: red;
+}
+
